@@ -45,7 +45,7 @@ body{
 .logo h1 a span{
     color: blue;
 }
-.navigation ul {
+.navigation .nav {
     list-style: none;
     display: none;
 }
@@ -80,7 +80,7 @@ body{
 .header-details button a{
     text-decoration: none;
     font-size: 16px;
-    padding: 5px 15px;
+    padding: 12px 32px;
     background-color: #3ec1d5;
     display: inline-block;
     margin: 10px;
@@ -137,7 +137,7 @@ body{
     .logo h1 a span{
         color: blue;
     }
-    .navigation ul {
+    .navigation .nav {
         list-style: none;
         display: none;
     }
@@ -176,7 +176,7 @@ body{
     .header-details button a{
         text-decoration: none;
         font-size: 16px;
-        padding: 5px 15px;
+        padding: 12px 32px;
         background-color: #3ec1d5;
         display: inline-block;
         margin: 10px;
@@ -233,7 +233,7 @@ body{
     .logo h1 a span{
         color: blue;
     }
-    .navigation ul {
+    .navigation .nav {
         list-style: none;
         display: none;
     }
@@ -270,7 +270,7 @@ body{
     .header-details button a{
         text-decoration: none;
         font-size: 16px;
-        padding: 5px 15px;
+        padding: 12px 32px;
         background-color: #3ec1d5;
         display: inline-block;
         margin: 10px;
@@ -322,41 +322,114 @@ body{
         color:#fff;
         padding: 5px;
         font-weight: bold;
+        line-height: 1;
     
     }
     
     .logo h1 a span{
         color: blue;
     }
-    .navigation ul {
+    .navigation .nav {
         list-style: none;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         color: #fff;
-
     }
-    .navigation ul li a{
+    .nav .nav-link .color{
+        color: #3ec1d5;
+    }
+    .nav .nav-link  a{
         font-size: 15px;
-        text-decoration: none;
-        color: #fff;
+        text-decoration: none; 
         display: flex;
         font-weight: 500;
-        margin: 15px;
-        padding: 5px;
+        padding:10px 10px 10px 30px;
+        color: #fff;
+    }
+    .dd-name {
+        font-size: 15px;
+        text-decoration: none; 
+        display: flex;
+        font-weight: 500;
+        padding:10px 10px 10px 30px;
+        color: #fff;
+    }
+    .nav li a:hover{
+        color: #3ec1d5;
     }
     .dd-list{
         position: relative;
     }
-    .icofont-rounded-down{
-        font-size: 15px;
-        color: #fff;
+    .dd-list .icofont-rounded-down{
+        font-size: 20px;
         display: block;
+        position:absolute;
+        right: -18px;
+        top: 3px;
     }
+    .dd-list a:hover  i{
+        color: #3ec1d5;
+    }
+    
     .dropdown{
         display: flex;
         flex-direction: column;
+        position: absolute;
+        background-color: #fff;
+        opacity: 0;
+        top: 45px;
+        left: -35px;
+        list-style: none;
+        box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
+        transition: 0.3s;
+        padding: 10px;
     }
-    .navigation i{
+    .dd-list:hover .dropdown{
+        opacity: 1;
+        visibility: visible;
+    }
+    .down-list{
+        min-width: 180px;
+        position: relative;
+    }
+    .down-list .icofont-rounded-right{
+        right: 0;
+        position: absolute;
+        display: block;
+        color: #444;
+        top: -6px;
+    }
+    .down-list{
+        margin: 15px;
+    }
+    .down-list a{
+        text-decoration: none;
+        color: #444;
+        font-size: 15px;
+    }
+    .down-list2{
+        min-width: 180px;
+        margin: 15px;
+    }
+    .dd-list2{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #fff;
+        opacity: 0;
+        top: 45px;
+        right: 205px;
+        list-style: none;
+        box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
+        transition: 0.3s;
+        padding: 10px;
+    }
+    .down-list:hover .dd-list2{
+        opacity: 1;
+        visibility: visible;
+    }
+
+     .navigation i{
         font-size: 20px;
         padding: 5px;
         color: #fff;
@@ -391,7 +464,7 @@ body{
     .header-details button a{
         text-decoration: none;
         font-size: 16px;
-        padding: 5px 15px;
+        padding:  12px 32px;
         background-color: #3ec1d5;
         display: inline-block;
         margin: 10px;
@@ -410,7 +483,7 @@ body{
     }
 }
 @media (min-width:1200px){
-    /* .fixed-container{
+    .fixed-container{
         width: 100%;
         background-color: rgba(0, 0, 0, 0.8);
         position: fixed;
@@ -421,7 +494,7 @@ body{
     }
     
     .fix{
-        width: 1120;
+        width: 1185px;
         height: 60px;
         margin: auto;
         display: flex;
@@ -437,7 +510,7 @@ body{
         margin-top: 15px;
     }
     .logo h1 a{
-        font-size: 28px;
+        font-size: 36px;
         text-decoration: none;
         color:#fff;
         padding: 5px;
@@ -448,21 +521,117 @@ body{
     .logo h1 a span{
         color: blue;
     }
-    .navigation ul {
+    .navigation .nav {
         list-style: none;
-        display: none;
+        display: flex;
+        justify-content: space-evenly;
+        color: #fff;
     }
-    .navigation i{
+    .nav li .color{
+        color: #3ec1d5;
+    }
+    .nav .nav-link  a{
+        font-size: 15px;
+        text-decoration: none; 
+        display: flex;
+        font-weight: 500;
+        padding:10px 10px 10px 30px;
+        color: #fff;
+    }
+    .dd-name {
+        font-size: 15px;
+        text-decoration: none; 
+        display: flex;
+        font-weight: 500;
+        padding:10px 10px 10px 30px;
+        color: #fff;
+    }
+    .nav li a:focus{
+        color: #3ec1d5;
+    }
+    .dd-list{
+        position: relative;
+    }
+    .dd-list .icofont-rounded-down{
+        font-size: 20px;
+        display: block;
+        position:absolute;
+        right: -18px;
+        top: 3px;
+    }
+    .dd-list a:focus  i{
+        color: #3ec1d5;
+    }
+    
+    .dropdown{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #fff;
+        opacity: 0;
+        top: 45px;
+        left: -35px;
+        list-style: none;
+        box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
+        transition: 0.3s;
+        padding: 10px;
+    }
+    .dd-list:hover .dropdown{
+        opacity: 1;
+        visibility: visible;
+    }
+    .down-list{
+        min-width: 180px;
+        position: relative;
+    }
+    .down-list .icofont-rounded-right{
+        right: 0;
+        position: absolute;
+        display: block;
+        color: #444;
+        top: -6px;
+    }
+    .down-list{
+        margin: 15px;
+    }
+    .down-list a{
+        text-decoration: none;
+        color: #444;
+        font-size: 15px;
+    }
+    .down-list2{
+        min-width: 180px;
+        margin: 15px;
+    }
+    .dd-list2{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #fff;
+        opacity: 0;
+        top: 45px;
+        right: 205px;
+        list-style: none;
+        box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
+        transition: 0.3s;
+        padding: 10px;
+    }
+    .down-list:hover .dd-list2{
+        opacity: 1;
+        visibility: visible;
+    }
+
+     .navigation i{
         font-size: 20px;
         padding: 5px;
         color: #fff;
+        display: none;
     }
-    .container{
-        width:100%;
-    }
+    
     .header-details{
         margin:auto;
-        width: 1120px;
+        width: 1185px;
+        height: auto;
         text-align: center;
         color: #fff;
     }
@@ -470,11 +639,14 @@ body{
         font-size: 24px;
         font-weight: 700;
         line-height: 1.2;
-        padding-top: 180px;
+        padding-top: 350px;
+    }
+    .container{
+        width:100%;
     }
     .header-details p{
-        font-size: 28px;
-        margin-top: 30px;
+        font-size: 38px;
+        margin: 30px 250px;
         line-height: 1.2;
     }
     .header-details button{
@@ -485,7 +657,7 @@ body{
     .header-details button a{
         text-decoration: none;
         font-size: 16px;
-        padding: 5px 15px;
+        padding:  12px 32px;
         background-color: #3ec1d5;
         display: inline-block;
         margin: 10px;
@@ -501,10 +673,10 @@ body{
     }
     .header-color{
         background-color: rgba(0, 0, 0, 0.7);
-    } */
-}
+    }
+  }
 @media (min-width:1400px){
-    /* .fixed-container{
+    .fixed-container{
         width: 100%;
         background-color: rgba(0, 0, 0, 0.8);
         position: fixed;
@@ -515,7 +687,7 @@ body{
     }
     
     .fix{
-        width: 1320x;
+        width: 1320px;
         height: 60px;
         margin: auto;
         display: flex;
@@ -531,7 +703,7 @@ body{
         margin-top: 15px;
     }
     .logo h1 a{
-        font-size: 28px;
+        font-size: 36px;
         text-decoration: none;
         color:#fff;
         padding: 5px;
@@ -542,44 +714,143 @@ body{
     .logo h1 a span{
         color: blue;
     }
-    .navigation ul {
+    .navigation .nav {
         list-style: none;
-        display: none;
+        display: flex;
+        justify-content: space-evenly;
+        color: #fff;
     }
-    .navigation i{
+    .nav li .color{
+        color: #3ec1d5;
+    }
+    .nav .nav-link  a{
+        font-size: 15px;
+        text-decoration: none; 
+        display: flex;
+        font-weight: 500;
+        padding:10px 10px 10px 30px;
+        color: #fff;
+    }
+    .dd-name {
+        font-size: 15px;
+        text-decoration: none; 
+        display: flex;
+        font-weight: 500;
+        padding:10px 10px 10px 30px;
+        color: #fff;
+    }
+    .nav li a:focus{
+        color: #3ec1d5;
+    }
+    .dd-list{
+        position: relative;
+    }
+    .dd-list .icofont-rounded-down{
+        font-size: 20px;
+        display: block;
+        position:absolute;
+        right: -18px;
+        top: 3px;
+    }
+    .dd-list a:focus  i{
+        color: #3ec1d5;
+    }
+    
+    .dropdown{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #fff;
+        opacity: 0;
+        top: 45px;
+        left: -35px;
+        list-style: none;
+        box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
+        transition: 0.3s;
+        padding: 10px;
+    }
+    .dd-list:hover .dropdown{
+        opacity: 1;
+        visibility: visible;
+    }
+    .down-list{
+        min-width: 180px;
+        position: relative;
+    }
+    .down-list .icofont-rounded-right{
+        right: 0;
+        position: absolute;
+        display: block;
+        color: #444;
+        top: -6px;
+    }
+    .down-list{
+        margin: 15px;
+    }
+    .down-list a{
+        text-decoration: none;
+        color: #444;
+        font-size: 15px;
+    }
+    .down-list2{
+        min-width: 180px;
+        margin: 15px;
+    }
+    .dd-list2{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #fff;
+        opacity: 0;
+        top: 45px;
+        right: 205px;
+        list-style: none;
+        box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
+        transition: 0.3s;
+        padding: 10px;
+    }
+    .down-list:hover .dd-list2{
+        opacity: 1;
+        visibility: visible;
+    }
+
+     .navigation i{
         font-size: 20px;
         padding: 5px;
         color: #fff;
+        display: none;
     }
-    .container{
-        width:100%;
-    }
+    
     .header-details{
         margin:auto;
         width: 1320px;
         text-align: center;
         color: #fff;
+        padding-bottom: 50px;
     }
     .header-details h2{
         font-size: 24px;
         font-weight: 700;
         line-height: 1.2;
-        padding-top: 180px;
+        padding-top: 350px;
+    }
+    .container{
+        width:100%;
     }
     .header-details p{
-        font-size: 28px;
-        margin-top: 30px;
+        font-size: 38px;
+        margin: 30px 250px;
         line-height: 1.2;
     }
     .header-details button{
-        margin: 40px 0px 50px 0px;
+        margin: 40px 0px 100px 0px;
         border: none;
         background: transparent;
     }
     .header-details button a{
         text-decoration: none;
         font-size: 16px;
-        padding: 5px 15px;
+        padding:  12px 32px;
         background-color: #3ec1d5;
         display: inline-block;
         margin: 10px;
@@ -592,11 +863,10 @@ body{
         background-image: url(images/1.jpg);
         background-position: center;
         background-size: cover;
+        /* position: relative; */
     }
     .header-color{
         background-color: rgba(0, 0, 0, 0.7);
-    /* } */
+    }
 }
 
-
-/* HEADER-CONTAINER   */
