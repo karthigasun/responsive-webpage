@@ -2710,3 +2710,1201 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* PORTFOLIO-CONTAINER */
+
+.portfolio-container{
+    width: 90%;
+    margin: auto;
+    height: auto;
+}
+.port-head h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 70px;
+    position: relative;
+    text-align: center;
+}
+.port-head h3::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    width: 30%;
+    margin: auto;
+    border: 1px solid #333;
+}
+.port-ul{
+    padding: 0;
+    margin: 5px 0px 35px 0px;
+    list-style: none;
+    text-align: center;
+}
+.port-ul .alone{
+    margin: 15px 15px 15px 0;
+    display: inline-block;
+    padding: 8px 24px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    background:#3EC1D5;
+    margin-bottom: 5px;
+    transition:0.3s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.port-ul .port-li{
+    margin: 15px 15px 15px 0;
+    display: inline-block;
+    padding: 8px 24px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #555;
+    border-radius: 50px;
+    background: #fff;
+    margin-bottom: 5px;
+    transition:0.3s;
+    border: 1px solid #444;
+    cursor: pointer;
+}
+.port-ul .port-li:hover{
+    background-color: #3EC1D5;
+    border: none;
+    color: #fff;
+}
+.port-card{
+    padding: 20px 0px;
+}
+.port-image{
+    position: relative;
+    overflow: hidden;
+}
+.port-image img{
+    max-width: 100%;
+}
+.port-det{
+    position: absolute;
+    top: -50px;
+    left: 0;
+    bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease 0s;
+    transition-property: height 0.4s;
+    text-align: center;
+    opacity: 0;
+    overflow: hidden;
+}
+.port-det h5{
+    font-size: 24px;
+    margin-top: 40%;
+    color: #ddd;
+    font-weight: 800;
+
+}
+.port-det p{
+    font-size: 13px;
+    margin-top: 6%;
+    color: #ddd;
+}
+.port-image:hover .port-det{
+    opacity:1;
+    top: 0;
+}
+@media(min-width:576px){
+    .portfolio-container{
+        width: 540px;
+        margin: auto;
+        height: auto;
+    }
+    .port-head h3{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 70px;
+        position: relative;
+        text-align: center;
+    }
+    .port-head h3::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -20px;
+        width: 80px;
+        margin: auto;
+        border: 1px solid #333;
+    }
+    .port-ul{
+        padding: 0;
+        margin: 5px 0px 35px 0px;
+        list-style: none;
+        text-align: center;
+    }
+    .port-ul .alone{
+        margin: 15px 15px 15px 0;
+        display: inline-block;
+        padding: 8px 24px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #fff;
+        background:#3EC1D5;
+        margin-bottom: 5px;
+        transition:0.3s;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    .port-ul .port-li{
+        margin: 15px 15px 15px 0;
+        display: inline-block;
+        padding: 8px 24px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #555;
+        border-radius: 50px;
+        background: #fff;
+        margin-bottom: 5px;
+        transition:0.3s;
+        border: 1px solid #444;
+        cursor: pointer;
+    }
+    .port-ul .port-li:hover{
+        background-color: #3EC1D5;
+        border: none;
+        color: #fff;
+    }
+    .port-foot{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .port-card{
+        width: 33.3333333%;
+        padding: 8px;
+    }
+    .port-image{
+        position: relative;
+        overflow: hidden;
+    }
+    .port-image img{
+        max-width: 100%;
+    }
+    .port-det{
+        position: absolute;
+        top: -50px;
+        left: 0;
+        bottom: 30px;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        transition: all 0.4s ease 0s;
+        transition-property: height 0.4s;
+        text-align: center;
+        opacity: 0;
+        overflow: hidden;
+    }
+    .port-det h5{
+        font-size: 24px;
+        margin-top: 40px;
+        color: #ddd;
+        font-weight: 800;
+    
+    }
+    .port-det p{
+        font-size: 13px;
+        margin-top: 6px;
+        color: #ddd;
+    }
+    .port-image:hover .port-det{
+        opacity:1;
+        top: 0;
+    }
+}
+@media (min-width:768px){
+    .portfolio-container{
+        width: 720px;
+        margin: auto;
+        height: auto;
+    }
+    .port-head h3{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 70px;
+        position: relative;
+        text-align: center;
+    }
+    .port-head h3::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -20px;
+        width: 80px;
+        margin: auto;
+        border: 1px solid #333;
+    }
+    .port-ul{
+        padding: 0;
+        margin: 5px 0px 35px 0px;
+        list-style: none;
+        text-align: center;
+    }
+    .port-ul .alone{
+        margin: 15px 15px 15px 0;
+        display: inline-block;
+        padding: 8px 24px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #fff;
+        background:#3EC1D5;
+        margin-bottom: 5px;
+        transition:0.3s;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    .port-ul .port-li{
+        margin: 15px 15px 15px 0;
+        display: inline-block;
+        padding: 8px 24px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #555;
+        border-radius: 50px;
+        background: #fff;
+        margin-bottom: 5px;
+        transition:0.3s;
+        border: 1px solid #444;
+        cursor: pointer;
+    }
+    .port-ul .port-li:hover{
+        background-color: #3EC1D5;
+        border: none;
+        color: #fff;
+    }
+    .port-foot{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .port-card{
+        width: 33.3333333%;
+        padding: 8px;
+    }
+    .port-image{
+        position: relative;
+        overflow: hidden;
+    }
+    .port-image img{
+        max-width: 100%;
+    }
+    .port-det{
+        position: absolute;
+        top: -50px;
+        left: 0;
+        bottom: 30px;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        transition: all 0.4s ease 0s;
+        transition-property: height 0.4s;
+        text-align: center;
+        opacity: 0;
+        overflow: hidden;
+    }
+    .port-det h5{
+        font-size: 24px;
+        margin-top: 60px;
+        color: #ddd;
+        font-weight: 800;
+    
+    }
+    .port-det p{
+        font-size: 13px;
+        margin-top: 6px;
+        color: #ddd;
+    }
+    .port-image:hover .port-det{
+        opacity:1;
+        top: 0;
+    }
+}
+@media (min-width:992px){
+    .portfolio-container{
+        width: 960px;
+        margin: auto;
+        height: auto;
+    }
+    .port-head h3{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 70px;
+        position: relative;
+        text-align: center;
+    }
+    .port-head h3::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -20px;
+        width: 80px;
+        margin: auto;
+        border: 1px solid #333;
+    }
+    .port-ul{
+        padding: 0;
+        margin: 5px 0px 35px 0px;
+        list-style: none;
+        text-align: center;
+    }
+    .port-ul .alone{
+        margin: 15px 15px 15px 0;
+        display: inline-block;
+        padding: 8px 24px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #fff;
+        background:#3EC1D5;
+        margin-bottom: 5px;
+        transition:0.3s;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    .port-ul .port-li{
+        margin: 15px 15px 15px 0;
+        display: inline-block;
+        padding: 8px 24px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #555;
+        border-radius: 50px;
+        background: #fff;
+        margin-bottom: 5px;
+        transition:0.3s;
+        border: 1px solid #444;
+        cursor: pointer;
+    }
+    .port-ul .port-li:hover{
+        background-color: #3EC1D5;
+        border: none;
+        color: #fff;
+    }
+    .port-foot{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .port-card{
+        width: 33.3333333%;
+        padding: 8px;
+    }
+    .port-image{
+        position: relative;
+        overflow: hidden;
+    }
+    .port-image img{
+        max-width: 100%;
+    }
+    .port-det{
+        position: absolute;
+        top: -50px;
+        left: 0;
+        bottom: 30px;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        transition: all 0.4s ease 0s;
+        transition-property: height 0.4s;
+        text-align: center;
+        opacity: 0;
+        overflow: hidden;
+    }
+    .port-det h5{
+        font-size: 24px;
+        margin-top: 80px;
+        color: #ddd;
+        font-weight: 800;
+    
+    }
+    .port-det p{
+        font-size: 13px;
+        margin-top: 6px;
+        color: #ddd;
+    }
+    .port-image:hover .port-det{
+        opacity:1;
+        top: 0;
+    }
+}
+@media (min-width:1200px){
+    .portfolio-container{
+        width: 1185px;
+        margin: auto;
+        height: auto;
+    }
+    .port-head h3{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 70px;
+        position: relative;
+        text-align: center;
+    }
+    .port-head h3::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -20px;
+        width: 80px;
+        margin: auto;
+        border: 1px solid #333;
+    }
+    .port-ul{
+        padding: 0;
+        margin: 5px 0px 35px 0px;
+        list-style: none;
+        text-align: center;
+    }
+    .port-ul .alone{
+        margin: 15px 15px 15px 0;
+        display: inline-block;
+        padding: 8px 24px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #fff;
+        background:#3EC1D5;
+        margin-bottom: 5px;
+        transition:0.3s;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    .port-ul .port-li{
+        margin: 15px 15px 15px 0;
+        display: inline-block;
+        padding: 8px 24px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #555;
+        border-radius: 50px;
+        background: #fff;
+        margin-bottom: 5px;
+        transition:0.3s;
+        border: 1px solid #444;
+        cursor: pointer;
+    }
+    .port-ul .port-li:hover{
+        background-color: #3EC1D5;
+        border: none;
+        color: #fff;
+    }
+    .port-foot{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .port-card{
+        width: 33.3333333%;
+        padding: 8px;
+    }
+    .port-image{
+        position: relative;
+        overflow: hidden;
+    }
+    .port-image img{
+        max-width: 100%;
+    }
+    .port-det{
+        position: absolute;
+        top: -50px;
+        left: 0;
+        bottom: 30px;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        transition: all 0.4s ease 0s;
+        transition-property: height 0.4s;
+        text-align: center;
+        opacity: 0;
+        overflow: hidden;
+    }
+    .port-det h5{
+        font-size: 24px;
+        margin-top: 120px;
+        color: #ddd;
+        font-weight: 800;
+    
+    }
+    .port-det p{
+        font-size: 13px;
+        margin-top: 6px;
+        color: #ddd;
+    }
+    .port-image:hover .port-det{
+        opacity:1;
+        top: 0;
+    }
+}
+@media(min-width:1400px){
+    .portfolio-container{
+        width: 1320px;
+        margin: auto;
+        height: auto;
+    }
+    .port-head h3{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 70px;
+        position: relative;
+        text-align: center;
+    }
+    .port-head h3::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -20px;
+        width: 80px;
+        margin: auto;
+        border: 1px solid #333;
+    }
+    .port-ul{
+        padding: 0;
+        margin: 5px 0px 35px 0px;
+        list-style: none;
+        text-align: center;
+    }
+    .port-ul .alone{
+        margin: 15px 15px 15px 0;
+        display: inline-block;
+        padding: 8px 24px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #fff;
+        background:#3EC1D5;
+        margin-bottom: 5px;
+        transition:0.3s;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    .port-ul .port-li{
+        margin: 15px 15px 15px 0;
+        display: inline-block;
+        padding: 8px 24px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #555;
+        border-radius: 50px;
+        background: #fff;
+        margin-bottom: 5px;
+        transition:0.3s;
+        border: 1px solid #444;
+        cursor: pointer;
+    }
+    .port-ul .port-li:hover{
+        background-color: #3EC1D5;
+        border: none;
+        color: #fff;
+    }
+    .port-foot{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .port-card{
+        width: 33.3333333%;
+        padding: 8px;
+    }
+    .port-image{
+        position: relative;
+        overflow: hidden;
+    }
+    .port-image img{
+        max-width: 100%;
+    }
+    .port-det{
+        position: absolute;
+        top: -50px;
+        left: 0;
+        bottom: 30px;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        transition: all 0.4s ease 0s;
+        transition-property: height 0.4s;
+        text-align: center;
+        opacity: 0;
+        overflow: hidden;
+    }
+    .port-det h5{
+        font-size: 24px;
+        margin-top: 120px;
+        color: #ddd;
+        font-weight: 800;
+    
+    }
+    .port-det p{
+        font-size: 13px;
+        margin-top: 6px;
+        color: #ddd;
+    }
+    .port-image:hover .port-det{
+        opacity:1;
+        top: 0;
+    }
+}
+
+/* PRICING-TABLE  */
+
+.pricing-container{
+    width: 90%;
+    margin: auto;
+    height: auto;
+    padding: 70px 0px 80px 0px;
+}
+.price-top h2{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 70px;
+    position: relative;
+    text-align: center;
+}
+.price-top h2::after{
+    content: "";
+    border: 1px solid #333;
+    bottom: -20px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 40%
+}
+.price-table{
+    margin-top: 30px;
+}
+.price-table h3{
+    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+    padding: 10px 0 20px 0px;
+}
+.price-list{
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-align: center;
+}
+.price-ul{
+    margin: 0;
+    padding: 0px 0px 25px 0px;
+    list-style: none;
+}
+.price-ul li{
+    color: #666;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+.price-ul li i{
+    padding: 5px 15px;
+    color: #3EC1D5;
+}
+.price-list button{
+    background: #444;
+    border: 1px solid #444;
+    color: #fff;
+    margin-bottom: 25px;
+    padding: 10px 35px;
+    border-radius: 30px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.price-list button:hover{
+    background-color: #fff;
+    color: #333;
+}
+.price-list .tab-but{
+    background-color: #3EC1D5;
+    border: 1px solid #3EC1D5;
+    color: #fff;
+    margin-bottom: 25px;
+    padding: 10px 35px;
+    border-radius: 30px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.price-list .tab-but:hover{
+    background-color: #333;
+    color: #fff;
+    border: #333;
+}
+@media (min-width:576px){
+    .pricing-container{
+        width: 540px;
+        margin: auto;
+        height: auto;
+        padding: 70px 0px 80px 0px;
+    }
+    .price-top h2{
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 70px;
+        position: relative;
+        text-align: center;
+    }
+    .price-top h2::after{
+        content: "";
+        border: 1px solid #333;
+        bottom: -20px;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        width: 40%
+    }
+    .pricing-foot{
+        display: flex;
+        justify-content: space-between;
+    }
+    .price-table{
+        margin-top: 30px;
+        width: 33.3333%;
+        padding: 0px 10px;
+    }
+    .price-table h3{
+        color: #333;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 25px;
+        padding: 20px 0 20px 0px;
+    }
+    .price-list{
+        border: 1px solid #ccc;
+        background-color: #fff;
+        text-align: center;
+    }
+    .price-ul{
+        margin: 0;
+        padding: 0px 0px 25px 0px;
+        list-style: none;
+    }
+    .price-ul li{
+        color: #666;
+        padding: 12px 15px;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+    }
+    .price-ul li i{
+        padding: 5px 15px;
+        color: #3EC1D5;
+    }
+    .price-list button{
+        background: #444;
+        border: 1px solid #444;
+        color: #fff;
+        margin-bottom: 25px;
+        padding: 10px 35px;
+        border-radius: 30px;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    .price-list button:hover{
+        background-color: #fff;
+        color: #333;
+    }
+    .price-list .tab-but{
+        background-color: #3EC1D5;
+        border: 1px solid #3EC1D5;
+        color: #fff;
+        margin-bottom: 25px;
+        padding: 10px 35px;
+        border-radius: 30px;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    .price-list .tab-but:hover{
+        background-color: #333;
+        color: #fff;
+        border: #333;
+    }
+}
+@media (min-width:768px){
+    .pricing-container{
+        width: 720px;
+        margin: auto;
+        height: auto;
+        padding: 70px 0px 80px 0px;
+    }
+    .price-top h2{
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 70px;
+        position: relative;
+        text-align: center;
+    }
+    .price-top h2::after{
+        content: "";
+        border: 1px solid #333;
+        bottom: -20px;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        width: 40%
+    }
+    .pricing-foot{
+        display: flex;
+        justify-content: space-between;
+    }
+    .price-table{
+        margin-top: 30px;
+        width: 33.3333%;
+        padding: 0px 10px;
+    }
+    .price-table h3{
+        color: #333;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 25px;
+        padding: 20px 0 20px 0px;
+    }
+    .price-list{
+        border: 1px solid #ccc;
+        background-color: #fff;
+        text-align: center;
+    }
+    .price-ul{
+        margin: 0;
+        padding: 0px 0px 25px 0px;
+        list-style: none;
+    }
+    .price-ul li{
+        color: #666;
+        padding: 12px 15px;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+    }
+    .price-ul li i{
+        padding: 5px 15px;
+        color: #3EC1D5;
+    }
+    .price-list button{
+        background: #444;
+        border: 1px solid #444;
+        color: #fff;
+        margin-bottom: 25px;
+        padding: 10px 35px;
+        border-radius: 30px;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    .price-list button:hover{
+        background-color: #fff;
+        color: #333;
+    }
+    .price-list .tab-but{
+        background-color: #3EC1D5;
+        border: 1px solid #3EC1D5;
+        color: #fff;
+        margin-bottom: 25px;
+        padding: 10px 35px;
+        border-radius: 30px;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    .price-list .tab-but:hover{
+        background-color: #333;
+        color: #fff;
+        border: #333;
+    }
+}
+@media (min-width:992px){
+    .pricing-container{
+        width: 960px;
+        margin: auto;
+        height: auto;
+        padding: 70px 0px 80px 0px;
+    }
+    .price-top h2{
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 70px;
+        position: relative;
+        text-align: center;
+    }
+    .price-top h2::after{
+        content: "";
+        border: 1px solid #333;
+        bottom: -20px;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        width: 40%
+    }
+    .pricing-foot{
+        display: flex;
+        justify-content: space-between;
+    }
+    .price-table{
+        margin-top: 30px;
+        width: 33.3333%;
+        padding: 0px 10px;
+    }
+    .price-table h3{
+        color: #333;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 25px;
+        padding: 20px 0 20px 0px;
+    }
+    .price-list{
+        border: 1px solid #ccc;
+        background-color: #fff;
+        text-align: center;
+    }
+    .price-ul{
+        margin: 0;
+        padding: 0px 0px 25px 0px;
+        list-style: none;
+    }
+    .price-ul li{
+        color: #666;
+        padding: 12px 15px;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+    }
+    .price-ul li i{
+        padding: 5px 15px;
+        color: #3EC1D5;
+    }
+    .price-list button{
+        background: #444;
+        border: 1px solid #444;
+        color: #fff;
+        margin-bottom: 25px;
+        padding: 10px 35px;
+        border-radius: 30px;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    .price-list button:hover{
+        background-color: #fff;
+        color: #333;
+    }
+    .price-list .tab-but{
+        background-color: #3EC1D5;
+        border: 1px solid #3EC1D5;
+        color: #fff;
+        margin-bottom: 25px;
+        padding: 10px 35px;
+        border-radius: 30px;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    .price-list .tab-but:hover{
+        background-color: #333;
+        color: #fff;
+        border: #333;
+    }
+
+}
+@media (min-width:1200px){
+    .pricing-container{
+        width: 1185px;
+        margin: auto;
+        height: auto;
+        padding: 70px 0px 80px 0px;
+    }
+    .price-top h2{
+        display: inline-block;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 70px;
+        position: relative;
+        text-align: center;
+    }
+    .price-top h2::after{
+        content: "";
+        border: 1px solid #333;
+        bottom: -20px;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        width: 40%
+    }
+    .pricing-foot{
+        display: flex;
+        justify-content: space-between;
+    }
+    .price-table{
+        margin-top: 30px;
+        width: 33.3333%;
+        padding: 0px 10px;
+    }
+    .price-table h3{
+        color: #333;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 25px;
+        padding: 20px 0 20px 0px;
+    }
+    .price-list{
+        border: 1px solid #ccc;
+        background-color: #fff;
+        text-align: center;
+    }
+    .price-ul{
+        margin: 0;
+        padding: 0px 0px 25px 0px;
+        list-style: none;
+    }
+    .price-ul li{
+        color: #666;
+        padding: 12px 15px;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+    }
+    .price-ul li i{
+        padding: 5px 15px;
+        color: #3EC1D5;
+    }
+    .price-list button{
+        background: #444;
+        border: 1px solid #444;
+        color: #fff;
+        margin-bottom: 25px;
+        padding: 10px 35px;
+        border-radius: 30px;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    .price-list button:hover{
+        background-color: #fff;
+        color: #333;
+    }
+    .price-list .tab-but{
+        background-color: #3EC1D5;
+        border: 1px solid #3EC1D5;
+        color: #fff;
+        margin-bottom: 25px;
+        padding: 10px 35px;
+        border-radius: 30px;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    .price-list .tab-but:hover{
+        background-color: #333;
+        color: #fff;
+        border: #333;
+    }
+
+}
+@media (min-width:1400px){
+    .pricing-container{
+        width: 1320px;
+        margin: auto;
+        height: auto;
+        padding: 70px 0px 80px 0px;
+    }
+    .price-top h2{
+        display: inline-block;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 70px;
+        position: relative;
+        text-align: center;
+    }
+    .price-top h2::after{
+        content: "";
+        border: 1px solid #333;
+        bottom: -20px;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        width: 40%
+    }
+    .pricing-foot{
+        display: flex;
+        justify-content: space-between;
+    }
+    .price-table{
+        margin-top: 30px;
+        width: 33.3333%;
+        padding: 0px 10px;
+    }
+    .price-table h3{
+        color: #333;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 25px;
+        padding: 20px 0 20px 0px;
+    }
+    .price-list{
+        border: 1px solid #ccc;
+        background-color: #fff;
+        text-align: center;
+    }
+    .price-ul{
+        margin: 0;
+        padding: 0px 0px 25px 0px;
+        list-style: none;
+    }
+    .price-ul li{
+        color: #666;
+        padding: 12px 15px;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+    }
+    .price-ul li i{
+        padding: 5px 15px;
+        color: #3EC1D5;
+    }
+    .price-list button{
+        background: #444;
+        border: 1px solid #444;
+        color: #fff;
+        margin-bottom: 25px;
+        padding: 10px 35px;
+        border-radius: 30px;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    .price-list button:hover{
+        background-color: #fff;
+        color: #333;
+    }
+    .price-list .tab-but{
+        background-color: #3EC1D5;
+        border: 1px solid #3EC1D5;
+        color: #fff;
+        margin-bottom: 25px;
+        padding: 10px 35px;
+        border-radius: 30px;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    .price-list .tab-but:hover{
+        background-color: #333;
+        color: #fff;
+        border: #333;
+    }
+}
+.testimonials{
+    padding: 80px 0px;
+    background-image: url(images/slider-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.testi-details{}
