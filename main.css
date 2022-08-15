@@ -4684,10 +4684,234 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #3EC1D5;
     color: #fff;
 }
-@media (min-width:576px){}
-@media (min-width:768px){}
-@media (min-width:992px){}
-@media (min-width:1200px){}
-@media (min-width:1400px){}
+@media (min-width:576px){
+    .subscribe{
+        width: 100%;
+        background-color: #3EC1D5;
+        padding: 30px 0px;
+    }
+    .sub-container{
+        margin: auto;
+        width: 540px;
+        text-align: center;
+    }
+    .sub-container h2{
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        display: inline-block;
+        color: #fff;
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+    .sub-container button{
+        background: #fff none repeat scroll 0 0;
+        border: 2px solid #fff;
+        color: #3EC1D5;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    .sub-container button:hover{
+        background-color: #3EC1D5;
+        color: #fff;
+    }
+}
+@media (min-width:768px){
+    .subscribe{
+        width: 100%;
+        background-color: #3EC1D5;
+        padding: 30px 0px;
+    }
+    .sub-container{
+        margin: auto;
+        width: 720px;
+        text-align: center;
+    }
+    .sub-container h2{
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        display: inline-block;
+        color: #fff;
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+    .sub-container button{
+        background: #fff none repeat scroll 0 0;
+        border: 2px solid #fff;
+        color: #3EC1D5;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    .sub-container button:hover{
+        background-color: #3EC1D5;
+        color: #fff;
+    }
+}
+@media (min-width:992px){
+    .subscribe{
+        width: 100%;
+        background-color: #3EC1D5;
+        padding: 30px 0px;
+    }
+    .sub-container{
+        margin: auto;
+        width: 960px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .sub-container h2{
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        display: inline-block;
+        color: #fff;
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+    .sub-container button{
+        background: #fff none repeat scroll 0 0;
+        border: 2px solid #fff;
+        color: #3EC1D5;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        padding: 10px 30px;
+        border-radius: 30px;
+        cursor: pointer;
+        margin-left: 100px;
+    }
+    .sub-container button:hover{
+        background-color: #3EC1D5;
+        color: #fff;
+    }
+}
+@media (min-width:1200px){
+    .subscribe{
+        width: 100%;
+        background-color: #3EC1D5;
+        padding: 30px 0px;
+    }
+    .sub-container{
+        margin: auto;
+        width: 1140px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .sub-container h2{
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        display: inline-block;
+        color: #fff;
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+    .sub-container button{
+        background: #fff none repeat scroll 0 0;
+        border: 2px solid #fff;
+        color: #3EC1D5;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        padding: 10px 30px;
+        border-radius: 30px;
+        cursor: pointer;
+        margin-left: 100px;
+    }
+    .sub-container button:hover{
+        background-color: #3EC1D5;
+        color: #fff;
+    }
+}
+@media (min-width:1400px){
+    .subscribe{
+        width: 100%;
+        background-color: #3EC1D5;
+        padding: 30px 0px;
+    }
+    .sub-container{
+        margin: auto;
+        width: 1320px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .sub-container h2{
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        display: inline-block;
+        color: #fff;
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+    .sub-container button{
+        background: #fff none repeat scroll 0 0;
+        border: 2px solid #fff;
+        color: #3EC1D5;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        padding: 10px 30px;
+        border-radius: 30px;
+        cursor: pointer;
+        margin-left: 100px;
+    }
+    .sub-container button:hover{
+        background-color: #3EC1D5;
+        color: #fff;
+    }
+}
+/* CONTACT-CONTAINER */
 
+.contact-container{
+    margin: auto;
+    width: 90%;
+    padding: 70px 0px 80px 0px;
+}
+.contact-head h2{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 70px;
+    position: relative;
+}
+.contact-head h2::after{
+    border: 1px solid #333;
+    bottom: -20px;
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 40%;
+}
+.contact-add{
+    margin-bottom: 30px ;
+}
+.contact-add i{
+    font-size: 32px;
+    color: #3ec1d5;
+}
+.contact-add p{
+    font-size: 16px;
+    line-height: 30px;
+    margin: 15px 0px;
+    color: #444;
 
+}
+
+}
